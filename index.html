@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revelationary Pitch-Deck | 2025</title>
+  <meta name="description" content="An exploration of different scroll based layout switch animations." />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/cch1nog.css" />
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this demo in a modern browser that supports CSS Variables."
+      );
+  </script>
+  <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+</head>
+
+<body class="loading">
+  <main>
+    <div class="frame">
+      <div class="frame__title">
+        <h1 class="frame__title-main">Try It</h1>
+        <a aria-label="Back to the article" class="frame__title-back" href="https://revelationary.online">
+          <span class="oh__inner">Back to the article</span>
+          <svg width="18px" height="18px" viewBox="0 0 24 24">
+            <path vector-effect="non-scaling-stroke"
+              d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <a class="frame__" href="https://revelationary.org/about">Our Mission</a>
+      <a class="frame__" href="https://revelationary.org/contact">Contact</a>
+    </div>
+    <section class="project project--intro">
+      <span class="project__label project__label--name">Project</span>
+      <span class="project__name">Revlationary</span>
+      <span class="project__label project__label--date">Date</span>
+      <span class="project__date">
+        <script>document.write(new Date().getFullYear());</script>
+      </span>
+      <h2 class="project__title">
+        <span class="project__title-line">Revelationary</span>
+        <span class="project__title-line">is a Bible Reading Application like no other</span>
+      </h2>
+      <span class="project__label project__label--mission">Mission</span>
+      <div class="project__mission">
+        <p>
+          The Revelationary Project is ultimately intended to help people deepen their understanding of the word of God.
+          The tools featured in the reading application are
+          designed so that a user can discover their own connection to
+          scripture whilst keeping them motivated and engaged in their journey.
+        </p>
+        <p>
+          Our goal is to improve the reading and study experience a user may
+          have with the Bible whilst establishing a strong and safe community that can engage in online discussions over
+          scripture.
+          Revelationary is more than just a website; it's a movement to inspire and connect believers worldwide.
+          <br></br>
+          Chris Palmer – Founder & Developer
+        </p>
+      </div>
+    </section>
+    <div class="gallery-wrap">
+      <div class="gallery gallery--row" id="gallery-1">
+        <div class="gallery__item gallery__item--s" style="background-image: url(img/bible.jpeg)"></div>
+        <div class="gallery__item gallery__item--m" style="background-image: url(img/3.png)"></div>
+        <!-- style="background-color: #1e1f24" -->
+        <div class="gallery__item gallery__item--l" style="background-image: url(img/4.png)"></div>
+        <div class="gallery__item gallery__item--xl gallery__item--center" style="background-image: url(img/1a.png)">
+        </div>
+        <div class="gallery__item gallery__item--l" style="background-image: url(img/5.png)"></div>
+        <div class="gallery__item gallery__item--m" style="background-image: url(img/2.png)"></div>
+        <div class="gallery__item gallery__item--s" style="background-image: url(img/pexels-hitarth-jadhav-220357.jpg)">
+        </div>
+        <div class="caption">
+          Within this meticulously arranged UI ensemble there is a whole host
+          of features to explore and discover. Many of which are new to the
+          Christian community for discussing the Bible online and studying to their own
+          preferences.
+        </div>
+      </div>
+    </div>
+    <!-- <section class="project project--intro">
+      <span class="project__label project__label--mission">The Problem</span>
+      <div class="project__mission">
+        <p>
+          In an age of endless distractions and information overload, staying spiritually grounded is harder than ever.
+          Millions of people want to engage with the Bible daily but struggle with consistency, motivation, or even
+          knowing where to start. Traditional Bible study tools often feel outdated, impersonal, or overly academic —
+          lacking the interactive, personalized experiences that modern users expect.
+        </p>
+        <p>
+          Meanwhile, younger audiences are rarely reached by existing platforms, which fail to adapt to the habits of
+          mobile-first, gamified learning. Social media offers quick spiritual soundbites but lacks depth, context, or
+          continuity. Even dedicated believers often drift in their reading routines due to a lack of community,
+          encouragement, or visible progress. Churches, small groups, and individual seekers are all facing the same
+          dilemma: how can the timeless wisdom of scripture stay relevant and engaging in a world that’s constantly
+          scrolling? This isn’t just a tech gap — it’s a spiritual engagement opportunity. There is a deep hunger for
+          tools that not only make Bible study more accessible, but also deeply personal, motivating, and rewarding.
+          Revelationary is born from this need — to bring modern design, social features, and habit-building mechanics
+          into the sacred act of reading and reflecting on God’s Word.
+        </p>
+      </div>
+    </section>
+    <section class="project project--intro">
+      <span class="project__label project__label--mission">The Solution</span>
+      <div class="project__mission">
+        <p>
+          Revelationary is a modern Bible study platform built for today’s world — combining scripture with the
+          motivation and community features of your favorite apps. Our goal is to help users not only read the Bible but to
+          truly engage with it — daily, joyfully, and with a sense of progress. We’ve reimagined the experience around
+          habit-building features like reading streaks, personal achievements, bookmarks, and highlights, all seamlessly
+          integrated into a clean, cross-device-friendly interface. Users can comment on verses, track their reading progress,
+          and unlock spiritual milestones that make their journey visible and rewarding. It’s not just about
+          progress — it’s about making spiritual growth feel tangible. 
+          <br></br>
+          Revelationary also bridges the gap between
+          traditional study and social sharing, enabling users to attach notes, images, and even short videos to verses
+          — keeping reflections private or sharing them publicly with the community. This creates a rich, searchable
+          layer of personal and collective insight over the Bible text. All user data is securely synced and heavily encrypted,
+          ensuring privacy and peace of mind. Our platform is designed to be inclusive, accessible, and welcoming to
+          all — regardless of denomination, background, or level of Bible knowledge. We heavily monitor our comments with three layers of moderation
+          including Googles Perspective API and our own in house developed systems.
+          <br></br>
+          Revelationary is not just another Bible app — it’s a digital sanctuary, helping believers form deeper
+          connections with scripture, with others, and with themselves.
+        </p>
+      </div>
+    </section> -->
+    <section class="project project--details project--left">
+      <span class="project__label project__label--default">Ethical Considerations</span>
+      <p>
+        Revelationary uses software to encourage consistent Bible study, but we are careful to ensure these tactics remain ethical and non-manipulative. Our goal is to motivate users by rewarding their spiritual growth through features like reading streaks and achievement milestones, fostering a sense of accomplishment without exploiting addictive behaviors. At just $1.99 per month, users gain access to powerful tools like streak tracking and comment functionality, while the Bible text itself will always remain free. Email sign-ups unlock additional features like verse highlighting, ensuring users have meaningful ways to interact with scripture without facing financial barriers. This approach aligns with our mission to create an accessible, spiritually enriching platform without compromising user trust.      </p>
+    </section>
+    <div class="gallery-wrap gallery-wrap--large">
+      <div class="gallery gallery--grid gallery--breakout" id="gallery-2">
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="background-image: url(img/pexels-rene-asmussen-636010.jpg)"></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="background-image: url(img/pexels-haley-black-1.jpg)"></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="background-image: url(img/pexels-joice-rivas-16401158.jpg)"></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="
+                background-image: url(img/pexels-luis-quintero-2258251.jpg);
+              "></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="background-image: url(img/5a.png)"></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="background-image: url(img/pexels-orlando-allo-8276058.jpg)"></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="
+                background-image: url(img/pexels-rdne-stock-project-5530579.jpg);
+              "></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="
+                background-image: url(img/pexels-tima-miroshnichenko-5199819.jpg);
+              "></div>
+        </div>
+        <div class="gallery__item gallery__item-cut">
+          <div class="gallery__item-inner" style="
+                background-image: url(img/pexels-tima-miroshnichenko-6860819.jpg);
+              "></div>
+        </div>
+        <div class="caption">
+          <p>
+            Our search API uses a highly advanced search algorithm that
+            enables the user to look up specific chapters, books and verses or
+            how many times a single key word or phrase may appear in the
+            entire Old Testament and New Testament texts. Returning paginated results on the fly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="project project--details project--right">
+      <span class="project__label project__label--default">Making Connections</span>
+      <p>
+        Every verse can be subsequently linked to any other verse in the
+        entire text and the attachment tool allows the user to relate the word
+        of God to real world events that may be evident in the media or
+        science.
+      </p>
+    </section>
+    <div class="gallery-wrap">
+      <div class="gallery gallery--grid10" id="gallery-3">
+        <div class="gallery__item pos-1" style="
+              background-image: url(img/pexels-william-fortunato-6140686.jpg);
+            "></div>
+        <div class="gallery__item pos-2" style="
+              background-image: url(img/pexels-vlada-karpovich-7365307.jpg);
+            "></div>
+        <div class="gallery__item pos-3" style="
+              background-image: url(img/pexels-tubarones-photography-3212106.jpg);
+            "></div>
+        <div class="gallery__item pos-4" style="
+              background-image: url(img/pexels-tima-miroshnichenko-6860820.jpg);
+            "></div>
+        <div class="gallery__item pos-5" style="
+              background-image: url(img/pexels-tima-miroshnichenko-5708716.jpg);
+            "></div>
+        <div class="gallery__item pos-6" style="
+              background-image: url(img/pexels-tima-miroshnichenko-5206053.jpg);
+            "></div>
+        <div class="gallery__item pos-7" style="
+              background-image: url(img/pexels-tima-miroshnichenko-5198239.jpg);
+            "></div>
+        <div class="gallery__item pos-8" style="background-image: url(img/pexels-thirdman-8485663.jpg)"></div>
+        <div class="gallery__item pos-9" style="background-image: url(img/pexels-ric-rodrigues-1309052.jpg)"></div>
+        <div class="gallery__item pos-10" style="background-image: url(img/pexels-pixabay-207582.jpg)"></div>
+        <div class="gallery__item pos-11" style="background-image: url(img/pexels-pavel-danilyuk-8817520.jpg)"></div>
+        <div class="gallery__item pos-12" style="
+              background-image: url(img/pexels-olia-danilevich-6768007.jpg);
+            "></div>
+        <div class="gallery__item pos-13" style="background-image: url(img/pexels-mikhail-nilov-7530005.jpg)"></div>
+        <div class="gallery__item pos-14" style="
+              background-image: url(img/pexels-marcus-aurelius-4063791.jpg);
+            "></div>
+        <div class="gallery__item pos-15" style="background-image: url(img/pexels-malachi-cowie-10574671.jpg)"></div>
+        <div class="gallery__item pos-16" style="background-image: url(img/pexels-luis-quintero-3612706.jpg)"></div>
+        <div class="caption">A Community Network</div>
+      </div>
+    </div>
+    <section class="project project--details">
+      <span class="project__label project__label--default">Societal Impact</span>
+      <p>
+        As AI-generated art becomes more prevalent, its long-term impact on
+        the art market, art institutions, and the broader societal perception
+        of art needs to be carefully examined. Understanding the implications
+        of AI-generated art for art sales, copyright laws, and the dynamics of
+        the art market is crucial for shaping future policies and practices.
+        Additionally, exploring the ways in which AI-generated art can
+        democratize artistic expression and challenge traditional hierarchies
+        is an ongoing challenge that requires proactive engagement and
+        collaboration.
+      </p>
+    </section>
+    <div class="gallery-wrap gallery-wrap--dense">
+      <div class="gallery gallery--stack gallery--stack-inverse gallery--stack-dark" id="gallery-4">
+        <div class="gallery__item" style="background-image: url(img/33.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/34.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/35.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/36.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/37.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/38.jpg)"></div>
+        <div class="caption">
+          <p>
+            AI-generated art captivates with varied creations, sometimes
+            senseless, yet impressively enigmatic.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-wrap gallery-wrap--dense">
+      <div class="gallery gallery--stack gallery--stack-glass" id="gallery-5">
+        <div class="gallery__item" style="background-image: url(img/39.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/40.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/41.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/42.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/43.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/44.jpg)"></div>
+        <div class="caption">
+          <p>
+            In the realm of unpredictable algorithms, some variations may
+            appear random or without purpose, challenging traditional notions
+            of beauty and meaning.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-wrap gallery-wrap--dense">
+      <div class="gallery gallery--stack gallery--stack-inverse gallery--stack-scale gallery--stack-dark"
+        id="gallery-6">
+        <div class="gallery__item" style="background-image: url(img/45.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/46.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/47.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/48.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/49.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/50.jpg)"></div>
+        <div class="caption">
+          <p>
+            This uncharted territory challenges artists and art enthusiasts
+            alike, igniting debates about the role of intention and chance in
+            the artistic process.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="project project--details project--right">
+      <span class="project__label project__label--default">Unmasking the Void of Authenticity</span>
+      <p>
+        While AI-generated art showcases impressive technical prowess, it
+        leaves behind an unsettling void in the quest for authenticity. As
+        humans, we seek the genuine touch of human hands and the depth of
+        emotional connection embedded within traditional art forms. The lack
+        of human essence in AI-generated creations may leave us yearning for
+        the profound human expression that sparks true resonance, evoking a
+        sense of emptiness in the face of machine-driven artistry.
+      </p>
+    </section>
+    <div class="gallery-wrap">
+      <div class="gallery gallery--gridtiny" id="gallery-7">
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/59.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/60.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/61.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/59.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/60.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/61.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/59.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/60.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/61.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/59.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/60.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/61.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/59.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/60.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/61.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/59.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/60.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/61.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/51.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/52.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/53.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/54.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/55.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/56.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/57.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/58.jpg)"></div>
+        <div class="caption">What is creativity?</div>
+      </div>
+    </div>
+    <section class="project project--details project--left">
+      <span class="project__label project__label--default">Photographic Flaws in Perfect Harmony</span>
+      <p>
+        In the realm of AI-generated photography, the quest for flawlessness
+        inadvertently unveils a striking paradox - the absence of authentic
+        imperfections. Even in the most human-like subjects, wrinkles and
+        blemishes appear too immaculate, leaving us yearning for the raw,
+        unfiltered beauty that only true imperfection can evoke.
+      </p>
+    </section>
+    <div class="gallery-wrap">
+      <div class="gallery gallery--bento" id="gallery-8">
+        <div class="gallery__item" style="background-image: url(img/64.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/63.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/62.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/69.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/65.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/67.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/68.jpg)"></div>
+        <div class="gallery__item" style="background-image: url(img/66.jpg)"></div>
+        <div class="caption">Perfect Imperfections</div>
+      </div>
+    </div>
+    <section class="project project--details project--right">
+      <span class="project__label project__label--default">Moving forward</span>
+      <p>
+        As we conclude this transformative project, we are left with profound
+        questions that continue to shape our understanding of AI-generated art
+        and its place in the artistic landscape. How do we reconcile the
+        precision of algorithms with the intangible spark of human creativity?
+        Can machines truly grasp the depth of emotion and meaning that art
+        evokes within us? And as AI continues to advance, how do we preserve
+        the authenticity and soul that define artistic expression?
+      </p>
+    </section>
+    <section class="project project--details project--left">
+      <span class="project__label project__label--default">Photo credits</span>
+      <p>
+        All images except one were generated with
+        <a href="https://midjourney.com">Midjourney</a>. The only "real" image
+        was taken by
+        <a href="https://unsplash.com/@karsten116">Karsten Winegeart</a>.
+        <strong>Can you spot which one?</strong> Hint: it's one of the
+        portraits in the last image grid. Let us know via
+        <a href="https://twitter.com/intent/tweet?text=@codrops">@codrops</a>.
+      </p>
+    </section>
+    <div class="gallery-wrap">
+      <div class="gallery gallery--one" id="gallery-9">
+        <div class="gallery__item" style="background-image: url(img/70.jpg)"></div>
+        <div class="caption">Made by @codrops</div>
+      </div>
+    </div>
+    <section class="project project--details project--left">
+      <p>
+        Like AI-generated art? Get a
+        <a href="https://tympanus.net/codrops/2023/06/12/free-ai-generated-images-vol-1/">free AI Art collection</a>
+        plus prompts to get inspired.
+      </p>
+    </section>
+  </main>
+  <!-- <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script> -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/Flip.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/lenis.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
